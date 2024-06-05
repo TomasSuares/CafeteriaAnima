@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2; /* Gris claro para el fondo de la página */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px; /* Ancho máximo del contenedor */
+  }
+  
+  .categoria {
+    background-color: #dcdcdc; /* Gris más oscuro para el fondo de cada categoría */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .categoria h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
