@@ -5,15 +5,15 @@ export default function FiltraProductos ({ productos, categoria }){
   return (
     <div>
       <ul>
-        {productos.filter(producto => producto.categoria === categoria && producto.stock > 0).map(producto => (
-          <li key={producto.nombre}>
-            <p>
-              <b>{producto.nombre}:</b>
-              {producto.categoria}
-              Precio: {producto.precio}, Stock: {producto.stock}
-            </p>
-          </li>
-        ))}
+      {productos.filter(producto => producto.categoria === categoria && producto.stock > 0).map(producto => (
+      <li key={producto.nombre}>
+      <p>
+      <b>{producto.nombre}:</b>
+      {producto.categoria}
+      Precio: {producto.precio}, Stock: {producto.stock}
+      </p>
+      </li>
+      ))}
       </ul>
     </div>
   );
