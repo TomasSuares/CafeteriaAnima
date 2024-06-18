@@ -5,9 +5,9 @@ export default function FiltraProductos ({ productos, categoria }){
   return (
     <div>
       <ul>
-      {productos.filter(producto => producto.categoria === categoria && producto.stock > 0).map(producto => (
+      {productos.filter(producto => producto.categoria === categoria).map(producto => (
       <li key={producto.nombre}>
-      <p>
+      <p style={{ textDecoration: producto.stock === 0 ? 'line-through' : 'none' }}>
       <b>{producto.nombre}:</b>
       {producto.categoria}
       Precio: {producto.precio}, Stock: {producto.stock}
